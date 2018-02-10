@@ -7,6 +7,6 @@
 </nav>
 <div class="container">
   <task-form></task-form>
-  <task-list [tasks]="tasks"></task-list>
+  <task-list *ngIf="tasks?.length" [tasks]="tasks"></task-list>
 </div>
 
